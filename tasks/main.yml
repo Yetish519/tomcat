@@ -43,8 +43,3 @@
     src: template/tomcat-users.xml.j2
     dest: "{{ tomcat_user_path }}"
 
-- name: shutdown tomcat
-  shell: nohup "{{ destination_folder }}"apache-tomcat-10.0.27/bin/shutdown.sh &
-
-- name: starting tomcat
-  shell: nohup "{{ destination_folder }}"apache-tomcat-10.0.27/bin/startup.sh &
